@@ -3,11 +3,16 @@ package Net::HTTP::API::Spec;
 use JSON;
 use Moose;
 use IO::All;
+use Carp;
 
 use Net::HTTP::API::Core;
 
 sub new_from_spec {
     my ($class, $spec_file) = @_;
+
+    if (! -f $spec_file) {
+        Carp::confess ("$spec_file does not exists");
+    }
 
     my $content < io($spec_file);
     my $spec = JSON::decode_json($content);
