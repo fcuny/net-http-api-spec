@@ -16,16 +16,16 @@
 
 ### API method declaration
 
-  * path: (required) path of the API method (start after the API base url, start with a /)
-  * method: (required) which HTTP method to use (GET/POST/PUT/DELETE)
-  * description: (optional) a description of what the method do
-  * strict: (optional) should the control of the arguments be strict (yes by default)
+  * path:           (required) path of the API method (start after the API base url, start with a /)
+  * method:         (required) which HTTP method to use (GET/POST/PUT/DELETE)
+  * description:    (optional) a description of what the method do
+  * strict:         (optional) should the control of the arguments be strict (yes by default)
   * authentication: (optional) does this method require authentication ? (no by default)
-  * expected: (optional) list of possible HTTP code accepted for this request (eg: [200, 201])
-  * params: (optional) list of parameters that will be used for the request
-  * params_in_url: (optional) should the parameters of the request be sent in the URL instead of body (for POST and PUT request)
-  * required: (optional) list of required parameters
-  * documetation: (optional) documentation for this method
+  * expected:       (optional) list of possible HTTP code accepted for this request (eg: [200, 201])
+  * params:         (optional) list of parameters that will be used for the request
+  * params_in_url:  (optional) should the parameters of the request be sent in the URL instead of body (for POST and PUT request)
+  * required:       (optional) list of required parameters
+  * documetation:   (optional) documentation for this method
 
 ### example: GitHub
 
