@@ -6,7 +6,7 @@ use IO::All;
 
 use Net::HTTP::API::Core;
 
-sub load_from_spec {
+sub new_from_spec {
     my ($class, $spec_file) = @_;
 
     my $content < io($spec_file);
