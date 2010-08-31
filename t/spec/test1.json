@@ -1,0 +1,38 @@
+{
+   "declare" : {
+      "api_format_mode" : "content-type",
+      "api_format" : "json"
+   },
+   "methods" : {
+      "add_corpus" : {
+         "params" : [
+            "name",
+            "tasks"
+         ],
+         "required" : [
+            "name",
+            "tasks"
+         ],
+         "expected" : [
+            "200",
+            "201"
+         ],
+         "path" : "/corpus/:name",
+         "method" : "POST"
+      },
+      "corpus" : {
+         "params" : [
+            "name"
+         ],
+         "required" : [
+            "name"
+         ],
+         "expected" : [
+            "200",
+            "204"
+         ],
+         "path" : "/corpus/:name",
+         "method" : "GET"
+      }
+   }
+}
