@@ -19,12 +19,14 @@
       },
       "user_following" : {
          "params" : [
-            "user"
+            "user",
+            "format"
          ],
          "required" : [
-            "user"
+            "user",
+            "format"
          ],
-         "path" : "/user/show/:user/followers",
+         "path" : "/:format/user/show/:user/followers",
          "method" : "GET"
       }
    }
